@@ -1,2 +1,6 @@
+node_modules/
 servey/ws-test/node_modules/
+servey/mongodb-test/node_modules/
+servey/http-test/node_modules/
+servey/event-test/node_modules/
 

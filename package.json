@@ -1,0 +1,24 @@
+{
+  "name": "bc-program",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iroun333/bc-program.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iroun333/bc-program/issues"
+  },
+  "homepage": "https://github.com/iroun333/bc-program#readme",
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}
