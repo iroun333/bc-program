@@ -5,31 +5,36 @@ const fs = require('fs');
 // const event = require('./event.js');
 
 const _sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
-let i =0;
+// const i =0;
 let CONFIG = {};
-let time = 1000;
+let time = 5000;
+const CONFIG_CHECK_TIME = 1000;
+
 
 const main = async () => {
-  try {
-    CONFIG = JSON.parse(fs.readFileSync('./config.json', 'utf-8'));
-    time = CONFIG.time;
-  } catch (err) {
-    console.error('ERROR %s', err.message);
-  }
-  console.log('time= %s', time);
+  console.log('%s time= %s', main.name, time);
   await _sleep(time);
-  console.log('i= %d', i);
-  i++;
+  // console.log('i= %d', i);
+  // i++;
 
   await main();
-  // };
 };
 
 const configCheck = async () => {
+  try {
+    CONFIG = JSON.parse(fs.readFileSync('./config.json', 'utf-8'));
+    if (CONFIG.time !== time) {
+      time = CONFIG.time;
+      console.log('time update %s', time);
+    }
+  } catch (err) {
+    console.error('ERROR %s', err.message);
+  }
+  console.log('%s', configCheck.name);
+  await _sleep(CONFIG_CHECK_TIME);
 
+  await configCheck();
 };
 
 main();
 configCheck();
-
-console.log('second');
