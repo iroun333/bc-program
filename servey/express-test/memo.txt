@@ -1,0 +1,23 @@
+express-session - npm
+https://www.npmjs.com/package/express-session
+
+ゼロからはじめるExpress + Node.jsを使ったアプリ開発 - Qiita
+https://qiita.com/nkjm/items/723990c518acfee6e473
+
+Expressでセッションを利用する | みかんみかんみかみん
+https://irisash.github.io/express/express_session/
+
+Node.jsとExpressでローカルサーバーを構築する(2) ―Expressでルーティング― - Qiita
+https://qiita.com/koedamon/items/fb85c3eb32e7838f9d7c
+
+
+
+
+「Cookie」と「セッション」と「セッションCookie」の違い | 猫型iPS細胞研究所
+https://ips.nekotype.com/2441/
+
+クッキー（Cookie）とセッションとキャッシュの違いは何か？ | Promapedia
+https://ssaits.jp/promapedia/technology/cookie-session-cache.html
+
+CookieとSessionの違いを説明できますか？｜juri-t｜note
+https://note.com/jurit/n/n025acb634da7
